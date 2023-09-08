@@ -18,7 +18,7 @@
 
 <section class="index-login">
     <div class="wrapper">
-   <!--    <div class="index-login-signup">
+     <div class="index-login-signup">
             <form action="includes/signup.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
@@ -27,20 +27,20 @@
             <br>
             <button type="submit" name="submit">SIGN UP</button>
             </form>
-        </div> -->
+        </div>
         <div class="login-form">
             <form action="includes/login.inc.php" method="post">
             <div><h2>dudlaj.me</h2></div>
                  <div class="input-box">
-                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" name="uid" placeholder="Username">
+                    <!-- <span class="icon"><ion-icon name="person-outline"></ion-icon></span> -->
+                     <input type="text" name="uid" placeholder="Username" required>
                  </div>
               <div class="input-box">
-                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                     <input type="password" name="pwd" placeholder="Password">
+                    <!--- <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> -->
+                     <input class="pwd" type="password" name="pwd" placeholder="Password" required>
                  </div>
                  <div class="remeber-forgot">
-                    <label><input type="checkbox">Remember me</label>
+                    <input type="checkbox"><label>Remember me</label>
                  <a href="#">Forgot Password</a>
                  </div>
             <br>

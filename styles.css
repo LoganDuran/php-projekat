@@ -118,6 +118,8 @@ header {
 .login-form h2 {
     font-size: 2rem;
     font-family: Righteous;
+    display: flex;
+    align-items: top;
     text-align: center;
     color: white;
     user-select: none;
@@ -130,13 +132,25 @@ header {
     height: 30px;
     border-radius: 25px;
     padding: 15px;
+    margin: 5px;
     border: none;
     outline: none;
 
 }
 
-.remeber-forgot input {
+.input-box .icon {
+    position: absolute;
+    right: 60px;
+}
+
+
+.remeber-forgot input[type=checkbox] {
+    width: 15px;
+    height: 15px;
     border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
 }
 

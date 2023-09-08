@@ -18,7 +18,23 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <button class="loginBtn-popup">Login</button>
+            <button class="loginBtn-popup">Login
+                <?php 
+                    if(isset($_SESSION["userid"])){
+                      
+                     ?> 
+                     <button class="loginBtn-popup"><?php echo $_SESSION["useruid"]; ?> </button>
+                     <?php              
+                    }
+                    else
+                    {
+                        ?>
+                        <button class="loginBtn-popup">Login </button>
+                        <?php              
+                    }
+                
+                ?>
+            </button>
         </nav>
     </header>
 </body>
